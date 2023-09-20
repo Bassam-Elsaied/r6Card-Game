@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, tahoma, sans-serif;
+    background-color: #1B262C;
+}
+.controlButton{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(3, 169, 244,0.6);
+    z-index: 2;
+}
+.controlButton span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: #f44336;
+    padding: 15px 20px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.info-container{
+    max-width: 1000px;
+    margin: 20px auto 0;
+    background-color: #0F4C75;
+    padding: 20px;
+    font-size: 24px;
+    overflow: hidden;
+    border: 2px solid #3282B8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.Memory-blocks{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    gap: 20px;
+    margin: 20px auto;
+}
+
+@media (max-width:767px) {
+    .Memory-blocks{
+        grid-template-columns: repeat(auto-fill , minmax(100px , 1fr));
+    }
+}
+
+
+
+.Memory-blocks.noClicking{
+    pointer-events: none;
+}
+
+.Memory-blocks .game-box{
+    height: 200px;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 200px;
+    margin: 0 10px 20px;
+}
+
+.Memory-blocks .game-box .front{
+    line-height: 200px;
+    background-color: #333;
+}
+.Memory-blocks .game-box .front img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* .Memory-blocks .game-box .front::before{
+    content: '!';
+    color: white;
+    font-size: 140px;
+    font-weight: bold;
+} */
+
+.Memory-blocks .game-box .back{
+    background-color: #3282B8;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.Memory-blocks .game-box .back img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.Memory-blocks .game-box .face{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border: 2px solid #BBE1FA;
+}
+
+.Memory-blocks .game-box.is-Flipped,
+.Memory-blocks .game-box.hasMatched{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}

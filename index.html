@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Card Game</title>
+</head>
+<body>
+    <div class="controlButton">
+        <span>Start Game</span>
+    </div>
+    <div class="info-container">
+        <div class="name">
+            Hello: <span></span>
+        </div>
+        <div class="tries">
+            Wrong Tries: <span>0</span>
+        </div>
+    </div>
+    <div class="Memory-blocks">
+        <div class="game-box" data-operations="ace">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/ace.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="ace">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/ace.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="azami">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/azami.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="azami">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/azami.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="clash">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/clash.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="clash">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/clash.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="caveira">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/caveira.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="caveira">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/caveira.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="finka">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/finka.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="finka">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/finka.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="fuze">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/fuze.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="fuze">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/fuze.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="lesion">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/lesion.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="lesion">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/lesion.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="nomad">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/nomad.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="nomad">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/nomad.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="valkyrie">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/valkyrie.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="valkyrie">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/valkyrie.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="frost">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/frost.png" alt="">
+            </div>
+        </div>
+        <div class="game-box" data-operations="frost">
+            <div class="face front">
+                <img src="./images/recruit_blue.png" alt="">
+            </div>
+            <div class="face back">
+                <img src="./images/frost.png" alt="">
+            </div>
+        </div>
+    </div>
+    <audio id="succes" src="./audio/succes.mp3" preload="auto"></audio>
+    <audio id="wrong" src="./audio/wrong.mp3" preload="auto"></audio>
+    <script src="main.js"></script>
+</body>
+</html>
